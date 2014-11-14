@@ -3,4 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_forecast_textview"
+        android:text="Today - Sunny - 15/30" />
 </LinearLayout>
