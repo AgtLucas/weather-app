@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -60,6 +63,20 @@ public class MainActivity extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            String[] forecastArray = {
+                    "Today - Sunny -  15/23",
+                    "Tomorrow - Rainy -  15/23",
+                    "Weds - Cloudy -  04/10",
+                    "Thurs - Sunny -  20/30",
+                    "Fry - Heavy Rain -  -10/4",
+                    "Sat - Foggy -  12/32",
+                    "Sun - Sunny -  08/22"
+            };
+
+            List<String> weekForecast = new ArrayList<String>(
+                    Arrays.asList(forecastArray));
+
             return rootView;
         }
     }
