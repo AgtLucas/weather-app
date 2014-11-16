@@ -78,8 +78,7 @@ public class MainActivity extends ActionBarActivity {
                     getActivity(),
                     R.layout.list_item_forecast,
                     R.id.list_item_forecast_textview,
-                    weekForecast
-            );
+                    weekForecast);
 
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
